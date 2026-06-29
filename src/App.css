@@ -1,3 +1,137 @@
 .home1{
     padding: 20px;
 }
+body {
+    background-color: #5c00d4;
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    /* Центрирование */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card-wrapper {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    background: #ffffff;
+    min-height: 550px;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+.card-header {
+    background: linear-gradient(135deg, #8e2de2, #4a00e0);
+    color: #ffffff;
+    border-bottom: none;
+    padding: 30px 20px;
+}
+
+.card-header h4 {
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+}
+
+.balance {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    box-shadow: 0 10px 20px rgba(106, 17, 203, 0.2);
+    border: none;
+    margin-top: -20px;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 14px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 12px;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.btn-primary:hover {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    color: #000000;
+}
+
+.sticker {
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+
+.btn-secondary2 {
+    background-color: rgb(20, 174, 0);
+    color: #ededed;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.btn-secondary1 {
+    background-color: rgb(255, 130, 130);
+    color: #ededed;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.btn-secondary {
+    background-color: #eee;
+    color: #666;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.form-control {
+    border-radius: 12px;
+    padding: 12px 15px;
+    border: 2px solid #f0f0f0;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #8e2de2;
+    box-shadow: none;
+}
+
+.card-page {
+    position: absolute;
+    inset: 0;
+    background: #fff;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(40%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.d-none {
+    display: none;
+}   

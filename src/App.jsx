@@ -9,6 +9,8 @@ import Calculator from './screens/calculator'
 import Currencyconvertor from './screens/currencyconvertor'
 import Percentagecalculator from './screens/percentagecalculator'
 import Lengthconverter from './screens/lengthconverter'
+import Credit from './screens/credit'
+import Bank from './screens/bank'
 
 
 
@@ -30,6 +32,8 @@ function App() {
           <Route path="/currencyconvertor" element={<Currencyconvertor />} />
           <Route path="/percentagecalculator" element={<Percentagecalculator />} />
           <Route path="/lengthconverter" element={<Lengthconverter />} />
+          <Route path="/credit" element={<Credit />} />
+          <Route path="/bank" element={<Bank />} />
 
      
 

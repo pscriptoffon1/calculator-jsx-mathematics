@@ -92,6 +92,7 @@ function Lengthconverter() {
 
       </div>
 
+<a href="/credit"><button className="bg-danger">Credit calculator</button></a>
     </div>
   );
 }
