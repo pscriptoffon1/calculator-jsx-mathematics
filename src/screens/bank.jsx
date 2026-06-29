@@ -6,8 +6,10 @@ function Bank() {
     const [page, setPage] = useState("menu");
 
     const [result, setResult] = useState(0);
+    const [result2, setResult2] = useState(0);
     const [pay, setPay] = useState(0);
     const [withdraw, setWithdraw] = useState(0);
+    const [exchange, setExchange] = useState(89);
 
     // пополнение
     function btn1() {
@@ -19,6 +21,12 @@ function Bank() {
     function btn2() {
         setResult(Number(result) - Number(withdraw));
         setWithdraw(0);
+    }
+    // обмен
+    function btn3() {
+        setResult2(+(Number(result) / Number(exchange)).toFixed(2));
+        setExchange(0);
+
     }
 
     return (
@@ -49,6 +57,16 @@ function Bank() {
 
                                 <b style={{ fontSize: "30px" }}>
                                     ₽
+                                </b><br />
+
+
+                                <b style={{ fontSize: "35px" }}>
+                                    {result2}
+                                </b>
+
+                                <b style={{ fontSize: "30px" }}>
+
+                                    $
                                 </b>
 
                             </div>
@@ -74,6 +92,14 @@ function Bank() {
                                 💳 Пополнить счет
                             </button>
 
+
+                            <button
+                                onClick={() => setPage("exchange")}
+                                className="btn btn-primary col-12 mb-2"
+                            >
+                                💱 Обменять счет в доллары
+                            </button>
+
                             <button
                                 onClick={() => setPage("history")}
                                 className="btn btn-primary col-12 mb-2"
@@ -85,6 +111,70 @@ function Bank() {
 
                     </div>
                 )}
+
+
+                {/* Обмен */}
+                {page === "exchange" && (
+
+                    <div className="card-page">
+
+                        <div className="card-header text-center p-4">
+                            <h4><b>💱 Обмен счета</b></h4>
+                            <span>Текущее состояние</span>
+                        </div>
+
+                        <div className="card-body">
+
+                            <div
+                                className="bg-primary text-white rounded-4 p-3"
+                            >
+                                <b>Ваш баланс</b>
+                                <br />
+
+                                <b style={{ fontSize: "35px" }}>
+                                    {result}₽
+                                </b>
+                                <br />
+                                <b style={{ fontSize: "35px" }}>
+                                    {result2}
+                                </b>
+
+                                <b style={{ fontSize: "30px" }}>
+
+                                    $
+                                </b>
+
+                            </div><br />
+
+                            <input
+                                type="number"
+                                className="form-control"
+                                value={exchange}
+                                onChange={(e) => setExchange(e.target.value)}
+                                placeholder="Введите сумму"
+                            />
+
+                            <button
+                                className="btn bg-danger text-white col-12 mt-3"
+                                onClick={btn3}
+                            >
+                                Снять сумму
+                            </button><br />
+                            <br /><br />
+
+                            <button
+                                onClick={() => setPage("menu")}
+                                className="btn btn-secondary col-12 mt-3"
+                            >
+                                Назад
+                            </button>
+
+                        </div>
+
+                    </div>
+                )}
+
+
 
 
                 {/* Баланс */}
@@ -140,7 +230,7 @@ function Bank() {
                                 <b>Сумма:</b>
                             </label>
 
-                           <input
+                            <input
                                 type="number"
                                 className="form-control"
                                 value={withdraw}
