@@ -118,6 +118,14 @@ function Bank() {
                             >
                                 📜 История операций
                             </button>
+                            <br />
+
+                        <a href="/customscalculator">   <button
+
+                                className="btn btn-primary col-12 mb-2"
+                            >
+                                CustomsCalculator
+                            </button></a> 
 
                         </div>
 
