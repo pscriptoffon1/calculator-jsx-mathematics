@@ -5,7 +5,7 @@ function Credit() {
     let [sum, setSum] = useState(0);
     let [first, setFirst] = useState(0);
 
-    let [percent, setPercent] = useState(0);
+    let [p, setPercent] = useState(0);
 
     let [loan, setLoan] = useState(0);
 
@@ -20,32 +20,38 @@ function Credit() {
 
     function btn() {
 
-
+        let percent = Number(p) / 12 / 100;
 
         let mm = 12 * Number(loan);
-        let perce = Number(percent) / 100;
 
         let one = Number(sum) - Number(first);
-        let one2 = Number(one) * Number(perce) * loan;
-        let two = Number(one) + Number(one2);
-        let three = Number(two) / Number(mm);
 
-        setResult1(Number(one.toFixed(2)));
-        setResult2(Number(one2.toFixed(2)));
-        setResult3(Number(three.toFixed(2)));
+        let three =
+            (one * percent * Math.pow(1 + percent, mm)) /
+            (Math.pow(1 + percent, mm) - 1);
 
+        let two = three * mm;
 
+        let one2 = two - one;
+
+        setResult1(one.toFixed(2));
+        setResult2(one2.toFixed(2));
+        setResult3(three.toFixed(2));
 
 
 
 
         let arr = [];
 
-        let ostatok = two;
+        let ostatok = one;
 
         for (let i = 1; i <= mm; i++) {
 
-            ostatok = ostatok - three;
+            let monthPercent = ostatok * percent;
+
+            let body = three - monthPercent;
+
+            ostatok = ostatok - body;
 
             if (ostatok < 0) {
                 ostatok = 0;
@@ -54,9 +60,10 @@ function Credit() {
             arr.push([
                 i,
                 three.toFixed(0),
+                monthPercent.toFixed(0),
+                body.toFixed(0),
                 ostatok.toFixed(0)
             ]);
-
         }
 
         setMonths(arr);
@@ -178,27 +185,27 @@ function Credit() {
                         <tr>
                             <th>Месяц</th>
                             <th>Платеж</th>
+                            <th>Проценты</th>
+                            <th>Основной долг</th>
                             <th>Остаток</th>
                         </tr>
 
                     </thead>
 
                     <tbody>
-
                         {months.map((m) => (
 
                             <tr key={m[0]}>
 
                                 <td>{m[0]}</td>
-
                                 <td>{m[1]} ₽</td>
-
                                 <td>{m[2]} ₽</td>
+                                <td>{m[3]} ₽</td>
+                                <td>{m[4]} ₽</td>
 
                             </tr>
 
                         ))}
-
                     </tbody>
 
                 </table>
