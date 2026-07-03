@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Ipoteka() {
+function Credit() {
 
     let [sum, setSum] = useState(0);
     let [first, setFirst] = useState(0);
@@ -11,9 +11,11 @@ function Ipoteka() {
 
 
     let [result1, setResult1] = useState(0);
-    let [result2, setResul2] = useState(0);
+    let [result2, setResult2] = useState(0);
     let [result3, setResult3] = useState(0);
 
+
+    let [months, setMonths] = useState([]);
 
 
     function btn() {
@@ -28,14 +30,41 @@ function Ipoteka() {
         let two = Number(one) + Number(one2);
         let three = Number(two) / Number(mm);
 
-        setResult1(one);
-        setResul2(one2);
-     
-        setResult3(three);
+        setResult1(Number(one.toFixed(2)));
+        setResult2(Number(one2.toFixed(2)));
+        setResult3(Number(three.toFixed(2)));
+
+
+
+
+
+
+        let arr = [];
+
+        let ostatok = two;
+
+        for (let i = 1; i <= mm; i++) {
+
+            ostatok = ostatok - three;
+
+            if (ostatok < 0) {
+                ostatok = 0;
+            }
+
+            arr.push([
+                i,
+                three.toFixed(0),
+                ostatok.toFixed(0)
+            ]);
+
+        }
+
+
 
     }
 
     return (
+        
         <div
             className="container-fluid p-5"
             style={{
@@ -136,6 +165,44 @@ function Ipoteka() {
 
                 <hr className="my-5" />
 
+                <hr className="my-5" />
+
+                <h3 className="mb-3">
+                    Результаты расчета
+                </h3>
+
+                <table className="table table-bordered">
+
+                    <thead>
+
+                        <tr>
+                            <th>Месяц</th>
+                            <th>Платеж</th>
+                            <th>Остаток</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        {months.map((m) => (
+
+                            <tr key={m[0]}>
+
+                                <td>{m[0]}</td>
+
+                                <td>{m[1]} ₽</td>
+
+                                <td>{m[2]} ₽</td>
+
+                            </tr>
+
+                        ))}
+
+                    </tbody>
+
+                </table>
+
                 <div className="row align-items-center">
 
                     <div className="col-md-3">
@@ -163,8 +230,8 @@ function Ipoteka() {
                     </div>
 
 
-                    
-               
+
+
 
                     <div className="col-md-3 text-end">
 
@@ -186,4 +253,4 @@ function Ipoteka() {
     );
 }
 
-export default Ipoteka;
+export default Credit;
