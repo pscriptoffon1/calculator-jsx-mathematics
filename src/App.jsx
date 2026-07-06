@@ -13,6 +13,12 @@ import Credit from './screens/credit'
 import Bank from './screens/bank'
 import Customscalculator from './screens/customscalculator'
 import Ipoteka from './screens/ipoteka'
+import Physicst from './screens/physicst'
+import Secondlaw from './screens/secondlaw'
+import Oma from './screens/oma'
+import Acceleration from './screens/acceleration'
+import Three from './screens/three'
+import Energy from './screens/energy'
 
 
 
@@ -38,6 +44,12 @@ function App() {
           <Route path="/bank" element={<Bank />} />
           <Route path="/customscalculator" element={<Customscalculator />} />
           <Route path="/ipoteka" element={<Ipoteka />} />
+          <Route path="/physicst" element={<Physicst />} />
+          <Route path="/secondlaw" element={<Secondlaw />} />
+          <Route path="/oma" element={<Oma />} />
+          <Route path="/acceleration" element={<Acceleration />} />
+          <Route path="/three" element={<Three />} />
+          <Route path="/energy" element={<Energy />} />
 
      
 
