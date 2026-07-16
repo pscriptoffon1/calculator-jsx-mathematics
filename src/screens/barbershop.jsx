@@ -1017,22 +1017,22 @@ function Barbershop() {
 
 
 
-                            <option value="Alex Barber">
+                            <option value="Стрижка Женская">
                                 Стрижка Женская
                             </option>
 
-                            <option value="John Smith">
+                            <option value="Стрижка Мужская">
                                 Стрижка Мужская
                             </option>
 
-                            <option value="John Smith">
+                            <option value="Стрижка Детская">
                                 Стрижка Детская
                             </option>
-                            <option value="John Smith">
+                            <option value="Укладка">
                                 Укладка
                             </option>
 
-                            <option value="John Smith">
+                            <option value="Очищение">
                                 Очищение
                             </option>
 
