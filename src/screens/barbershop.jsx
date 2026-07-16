@@ -1012,7 +1012,7 @@ function Barbershop() {
                         <select onChange={(e) => setSelectedService(e.target.value)} className="selectBox">
 
                             <option value="Не выбрано">
-                                Выберите мастера
+                                Выберите услугу
                             </option>
 
 
