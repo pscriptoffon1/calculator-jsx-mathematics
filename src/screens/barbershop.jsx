@@ -19,15 +19,18 @@ function Barbershop() {
     const [selectedName, setSelectedName] = useState('Не выбрано');
     const [selectedTime, setSelectedTime] = useState('Не выбрано');
     const [selectedDate, setSelectedDate] = useState('Не выбрано');
+    const [selectedService, setSelectedService] = useState('Не выбрано');
 
     const [resultnameb, setResultNamee] = useState('');
     const [resulttime, setResultTime] = useState('');
     const [resultDate, setResultDate] = useState('');
-
+    const [resultservice, setResultService] = useState('');
+    service
     const handleButtonClickSelect = () => {
         setResultNamee(selectedName);
         setResultTime(selectedTime);
         setResultDate(selectedDate);
+        setResultService(selectedService);
     };
     /*ИМЯ барбера + селект*/
 
@@ -854,6 +857,13 @@ function Barbershop() {
                                 <b>{resultnameb}</b>
                             </div>
 
+                            <div>
+                                <span><i class="fas fa-scissors ic-u"></i>
+
+                                    Услуга</span>
+                                <b>{resultservice}</b>
+                            </div>
+
 
 
                             <div>
@@ -991,6 +1001,43 @@ function Barbershop() {
                         </select>
 
 
+                        {/* Услуга */}
+
+                        <label>
+                            <i class="fas fa-scissors ic-u"></i>
+                            Выберите услугу
+                        </label>
+
+
+                        <select onChange={(e) => setSelectedService(e.target.value)} className="selectBox">
+
+                            <option value="Не выбрано">
+                                Выберите мастера
+                            </option>
+
+
+
+                            <option value="Alex Barber">
+                                Стрижка Женская
+                            </option>
+
+                            <option value="John Smith">
+                                Стрижка Мужская
+                            </option>
+
+                            <option value="John Smith">
+                                Стрижка Детская
+                            </option>
+                            <option value="John Smith">
+                                Укладка
+                            </option>
+
+                            <option value="John Smith">
+                                Очищение
+                            </option>
+
+                        </select>
+
 
 
                         {/* Дата */}
@@ -1078,6 +1125,11 @@ function Barbershop() {
                         <div>
                             Мастер:
                             <b> {resultnameb}</b>
+                        </div>
+
+                        <div>
+                            Услуга:
+                            <b> {resultservice}</b>
                         </div>
 
 
