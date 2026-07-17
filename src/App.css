@@ -3051,3 +3051,2046 @@ color: #0f316a;
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TAXI*/
+
+
+.splashTaxi{
+    width:100%;
+    min-height:100vh;
+    background:#8F00FF;
+    position:relative;
+    overflow:hidden;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ---------- Taxi ---------- */
+
+.logoTaxi{
+    position:absolute;
+    width:120px;
+    height:120px;
+    left:50%;
+    transform:translateX(-50%);
+    top:139px;
+    background:#fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.logoTaxi img{
+    width:92px;
+}
+
+/* ---------- Text ---------- */
+
+.textBoxTaxi{
+    position:absolute;
+    width:260px;
+    left:50%;
+    transform:translateX(-50%);
+    top:293px;
+    text-align:center;
+}
+
+.titleTaxi{
+    color:#fff;
+    font-size:40px;
+    font-weight:400;
+    line-height:60px;
+    margin:0;
+}
+
+.descTaxi{
+    margin-top:18px;
+    color:#fff;
+    font-size:16px;
+    line-height:26px;
+}
+
+/* ---------- Google ---------- */
+
+.googleBtnTaxi{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:591px;
+
+    width:303px;
+    height:64px;
+
+    border:none;
+    background:#fff;
+    border-radius:4px;
+
+    display:flex;
+    align-items:center;
+
+    cursor:pointer;
+}
+
+.googleIconTaxi{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#fff;
+    margin-left:18px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.googleIconTaxi img{
+    width:22px;
+}
+
+.googleBtnTaxi span{
+    width:100%;
+    margin-right:58px;
+    text-align:center;
+
+    font-size:16px;
+    font-weight:500;
+    color:#000;
+}
+
+/* ---------- Apple ---------- */
+
+.appleBtnTaxi{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:667px;
+
+    width:303px;
+    height:64px;
+
+    border:none;
+    background:#000;
+    border-radius:4px;
+
+    display:flex;
+    align-items:center;
+
+    cursor:pointer;
+}
+
+.appleIconTaxi{
+    width:60px;
+    height:40px;
+    border-radius:50%;
+    background:#fff;
+    margin-left:18px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.appleIconTaxi img{
+    width:20px;
+}
+
+.appleBtnTaxi span{
+    width:100%;
+    margin-right:58px;
+    text-align:center;
+
+    font-size:16px;
+    font-weight:500;
+    color:#fff;
+}
+
+/* ---------- Sign Up ---------- */
+
+.signupTaxi{
+    position:absolute;
+    width:100%;
+    bottom:34px;
+    left:0;
+
+    text-align:center;
+    font-size:14px;
+    color:#000;
+}
+
+.signupTaxi span{
+    font-weight:600;
+}
+
+/* ---------- Mobile ---------- */
+
+@media(max-width:375px){
+
+    .logoTaxi,
+    .textBoxTaxi,
+    .googleBtnTaxi,
+    .appleBtnTaxi{
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .googleBtnTaxi,
+    .appleBtnTaxi{
+        width:82%;
+    }
+
+}
+
+
+/* ================= VEHICLE PAGE ================= */
+
+.vehicleTaxi {
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+.mapTopTaxi {
+    width: 100%;
+    height: 54vh;
+    background: url("https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=900&q=80");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.mapTopTaxi::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+            rgba(255,255,255,.95),
+            rgba(255,255,255,0));
+}
+
+.backTaxi {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 12px;
+    background: white;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 5;
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+.routeTaxi {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 80px;
+    background: white;
+    border-radius: 20px;
+    padding: 18px;
+    z-index: 5;
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+.routeItemTaxi {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.routeItemTaxi p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.routeLineTaxi {
+    width: 2px;
+    height: 24px;
+    background: #d8d8d8;
+    margin: 10px 0 10px 8px;
+}
+
+.dotPurpleTaxi {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #8F00FF;
+    display: block;
+}
+
+.dotRedTaxi {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ff3b5c;
+    display: block;
+}
+
+.vehicleBottomTaxi {
+    background: white;
+    margin-top: -20px;
+    border-radius: 30px 30px 0 0;
+    padding: 25px 20px 35px;
+    position: relative;
+    z-index: 10;
+    min-height: 46vh;
+}
+
+.titleVehicleTaxi {
+    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+}
+/* ================= CAR CARDS ================= */
+
+.carCardTaxi,
+.carCardActiveTaxi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 18px;
+    border-radius: 18px;
+    margin-bottom: 16px;
+    transition: .3s;
+}
+
+.carCardTaxi {
+    background: #fafafa;
+    border: 1px solid #ececec;
+}
+
+.carCardActiveTaxi {
+    background: #8F00FF;
+    color: white;
+}
+
+.carImgTaxi {
+    width: 90px;
+    height: 55px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.carInfoTaxi {
+    flex: 1;
+}
+
+.carInfoTaxi h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.carInfoTaxi p {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #777;
+}
+
+.carCardActiveTaxi .carInfoTaxi p {
+    color: rgba(255,255,255,.85);
+}
+
+.priceTaxi {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+}
+
+.priceWhiteTaxi {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+/* ================= PAYMENT ================= */
+
+.paymentTaxi {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+    margin-bottom: 25px;
+}
+
+.paymentBtnTaxi,
+.promoBtnTaxi {
+    flex: 1;
+    height: 52px;
+    border-radius: 14px;
+    border: 1px solid #ececec;
+    background: #fafafa;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.paymentBtnTaxi:hover,
+.promoBtnTaxi:hover {
+    background: #f3f3f3;
+}
+
+/* ================= BOOK BUTTON ================= */
+
+.bookTaxi {
+    width: 100%;
+    height: 62px;
+    border: none;
+    border-radius: 16px;
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 22px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.bookTaxi:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.25);
+}
+
+.bookTaxi span:last-child {
+    background: white;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* ================= CAR CARDS ================= */
+
+.carCardTaxi,
+.carCardActiveTaxi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 18px;
+    border-radius: 18px;
+    margin-bottom: 16px;
+    transition: .3s;
+}
+
+.carCardTaxi {
+    background: #fafafa;
+    border: 1px solid #ececec;
+}
+
+.carCardActiveTaxi {
+    background: #8F00FF;
+    color: white;
+}
+
+.carImgTaxi {
+    width: 90px;
+    height: 55px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.carInfoTaxi {
+    flex: 1;
+}
+
+.carInfoTaxi h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.carInfoTaxi p {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #777;
+}
+
+.carCardActiveTaxi .carInfoTaxi p {
+    color: rgba(255,255,255,.85);
+}
+
+.priceTaxi {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111;
+}
+
+.priceWhiteTaxi {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+
+/* ================= PAYMENT ================= */
+
+.paymentTaxi {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+    margin-bottom: 25px;
+}
+
+.paymentBtnTaxi,
+.promoBtnTaxi {
+    flex: 1;
+    height: 52px;
+    border-radius: 14px;
+    border: 1px solid #ececec;
+    background: #fafafa;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.paymentBtnTaxi:hover,
+.promoBtnTaxi:hover {
+    background: #f3f3f3;
+}
+
+/* ================= BOOK BUTTON ================= */
+
+.bookTaxi {
+    width: 100%;
+    height: 62px;
+    border: none;
+    border-radius: 16px;
+    background: #000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 22px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.bookTaxi:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.25);
+}
+
+.bookTaxi span:last-child {
+    background: white;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+/* ================= HOME PAGE ================= */
+
+.homeTaxi {
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+.mapTaxi {
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    background: url("https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?q=80&w=1200&auto=format&fit=crop")
+        center/cover no-repeat;
+}
+
+.gradientTaxi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 170px;
+    background: linear-gradient(
+        to bottom,
+        rgba(255,255,255,1),
+        rgba(255,255,255,0)
+    );
+    z-index: 1;
+}
+
+/* ================= HEADER ================= */
+
+.headerTaxi {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.menuTaxi {
+    width: 52px;
+    height: 52px;
+    background: #8F00FF;
+    color: #fff;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(143,0,255,.25);
+}
+
+.avatarTaxi {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 6px 18px rgba(0,0,0,.15);
+}
+
+/* ================= MAP PINS ================= */
+
+.circleTaxi {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: rgba(143,0,255,.15);
+    left: 50%;
+    top: 170px;
+    transform: translateX(-50%);
+}
+
+.locationTaxi {
+    position: absolute;
+    left: 50%;
+    top: 205px;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 44px;
+    background: #8F00FF;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border: 4px solid #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,.2);
+    z-index: 2;
+}
+
+.gpsTaxi {
+    position: absolute;
+    right: 20px;
+    top: 270px;
+    width: 52px;
+    height: 52px;
+    background: #fff;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    cursor: pointer;
+}
+
+/* ================= BOTTOM SHEET ================= */
+
+.bottomSheetTaxi {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 45vh;
+    background: #fff;
+    border-radius: 30px 30px 0 0;
+    padding: 28px 20px;
+    box-shadow: 0 -8px 25px rgba(0,0,0,.08);
+    z-index: 10;
+}
+
+
+/* TITLE */
+
+.sheetTitleTaxi {
+    margin: 0 0 22px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #080A24;
+}
+
+
+/* INPUT BOX */
+
+.inputBoxTaxi {
+    width: 100%;
+    height: 60px;
+    background: #FAFAFA;
+    border: 1px solid #EDEDED;
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 0 18px;
+    box-sizing: border-box;
+
+    margin-bottom: 16px;
+}
+
+
+.inputIconTaxi {
+    font-size: 18px;
+}
+
+
+.redTaxi {
+    color: #F52D56;
+}
+
+
+.inputTaxi {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    font-size: 14px;
+    font-family: "Poppins";
+
+    color: #333;
+}
+
+
+.inputTaxi::placeholder {
+    color: #656565;
+}
+
+
+/* LINE BETWEEN LOCATIONS */
+
+.lineTaxi {
+    position: absolute;
+
+    left: 42px;
+    top: 143px;
+
+    height: 25px;
+    border-left: 2px dashed #C8C7CC;
+}
+
+
+/* FIND BUTTON */
+
+.findRideBtnTaxi {
+
+    width: 100%;
+    height: 60px;
+
+    margin-top: 10px;
+
+    background: #8F00FF;
+    color: white;
+
+    border: none;
+    border-radius: 16px;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    font-family: "Poppins";
+
+    cursor: pointer;
+
+    box-shadow: 0 10px 25px rgba(143,0,255,.25);
+
+    transition: .3s;
+}
+
+
+.findRideBtnTaxi:hover {
+
+    transform: translateY(-2px);
+
+}
+
+/* ================= HISTORY ================= */
+
+.historyTaxi {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.historyItemTaxi {
+
+    width: 100%;
+    height: 72px;
+
+    background: #FAFAFA;
+
+    border: 1px solid #EDEDED;
+
+    border-radius: 0;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 18px;
+
+    box-sizing: border-box;
+
+}
+
+
+.historyIconTaxi {
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fff;
+
+    font-size: 18px;
+
+    margin-right: 15px;
+
+    color: #CACACA;
+
+}
+
+
+.historyTextTaxi h4 {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    color: #000;
+
+}
+
+
+.historyTextTaxi p {
+
+    margin: 4px 0 0;
+
+    font-size: 12px;
+
+    color: #656565;
+
+}
+
+
+/* ================= BOTTOM SAFE AREA ================= */
+
+.homeTaxi::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 20px;
+
+    background: #fff;
+
+}
+
+
+
+/* ================= MOBILE 375x812 ================= */
+
+@media(max-width:480px){
+
+
+    .mapTaxi {
+
+        height: 52vh;
+
+    }
+
+
+    .circleTaxi {
+
+        width:120px;
+
+        height:120px;
+
+        top:150px;
+
+    }
+
+
+    .locationTaxi {
+
+        top:180px;
+
+    }
+
+
+    .gpsTaxi {
+
+        top:250px;
+
+        right:18px;
+
+    }
+
+
+    .bottomSheetTaxi {
+
+        min-height:48vh;
+
+        padding:24px 18px;
+
+    }
+
+
+    .sheetTitleTaxi {
+
+        font-size:18px;
+
+    }
+
+
+    .inputBoxTaxi {
+
+        height:56px;
+
+    }
+
+
+    .findRideBtnTaxi {
+
+        height:56px;
+
+        font-size:16px;
+
+    }
+
+
+    .historyItemTaxi {
+
+        height:68px;
+
+    }
+
+}
+
+/* ================= HOME BOTTOM ================= */
+
+.bottomTaxi {
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: #fff;
+
+    min-height: 48vh;
+
+    border-radius: 30px 30px 0 0;
+
+    padding: 28px 20px;
+
+    box-shadow: 0 -5px 20px rgba(0,0,0,.08);
+
+    z-index: 10;
+
+}
+
+
+/* TITLE */
+
+.titleTaxiHome {
+
+    margin: 0 0 22px;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    color: #080A24;
+
+}
+
+
+/* INPUT */
+
+.bottomTaxi .inputBoxTaxi {
+
+    width: 100%;
+
+    height: 58px;
+
+    background: #FAFAFA;
+
+    border: 1px solid #EDEDED;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 16px;
+
+    margin-bottom: 14px;
+
+}
+
+
+.bottomTaxi input {
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    flex: 1;
+
+    font-size: 14px;
+
+    font-family: "Poppins";
+
+}
+
+
+.bottomTaxi input::placeholder {
+
+    color:#656565;
+
+}
+
+
+/* ICONS */
+
+.dotTaxi {
+
+    font-size: 18px;
+
+}
+
+
+.pinTaxi {
+
+    font-size: 18px;
+
+}
+
+
+/* LINE */
+
+.lineTaxi {
+
+    position: absolute;
+
+    left: 38px;
+
+    top: 142px;
+
+    height: 25px;
+
+    border-left: 2px dashed #C8C7CC;
+
+}
+
+
+/* BUTTON */
+
+.continueTaxi {
+
+    width:100%;
+
+    height:58px;
+
+    margin-top:10px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#8F00FF;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    font-family:"Poppins";
+
+    cursor:pointer;
+
+}
+
+
+
+/* RECENT TITLE */
+
+.recentTaxi {
+
+    margin-top:22px;
+
+    margin-bottom:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#080A24;
+
+}
+
+
+/* HISTORY CARD */
+
+.historyTaxi {
+
+    width:100%;
+
+    height:70px;
+
+    background:#FAFAFA;
+
+    border:1px solid #EDEDED;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:0 16px;
+
+    margin-bottom:10px;
+
+}
+
+
+/* HISTORY ICON */
+
+.historyIconTaxi {
+
+    width:38px;
+
+    height:38px;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:18px;
+
+}
+
+
+/* TEXT */
+
+.historyTaxi h4 {
+
+    margin:0;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#000;
+
+}
+
+
+.historyTaxi p {
+
+    margin:3px 0 0;
+
+    font-size:12px;
+
+    color:#656565;
+
+}
+
+.selectTaxi {
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:14px;
+
+    font-family:"Poppins";
+
+    color:#656565;
+
+    cursor:pointer;
+
+}
+
+
+.selectTaxi option {
+
+    color:#000;
+
+}
+
+
+.selectTaxi:focus {
+
+    color:#000;
+
+}
+
+
+.carCardTaxi,
+.carCardActiveTaxi {
+    cursor:pointer;
+}
+
+
+
+
+.paymentPageTaxi{
+
+    width: 100%;
+    min-height: 100vh;
+
+    background:white;
+
+    position:relative;
+
+    margin:auto;
+
+    overflow:hidden;
+
+}
+
+
+
+.paymentHeaderTaxi{
+
+    height:103px;
+
+    background:#8F00FF;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:70px;
+
+    padding:0 36px;
+
+    color:white;
+
+}
+
+
+
+.paymentHeaderTaxi h2{
+
+    font-family:Poppins;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+
+.closePaymentTaxi{
+
+    width:40px;
+    height:40px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:white;
+
+    font-size:25px;
+
+}
+
+
+
+.choosePaymentTaxi{
+
+    margin:35px 36px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#080A24;
+
+}
+
+
+
+
+.paymentCardTaxi{
+
+    width:100%;
+
+    height:105px;
+
+
+    background:#FAFAFA;
+
+
+    border:1px solid #EDEDED;
+
+
+    display:flex;
+
+    align-items:center;
+
+
+    padding:0 36px;
+
+
+    gap:18px;
+
+
+    box-sizing:border-box;
+
+
+}
+
+
+
+
+
+.activePaymentTaxi{
+
+    border:2px solid #8F00FF;
+
+}
+
+
+
+
+
+.paymentLogoTaxi{
+
+    width:42px;
+
+    height:42px;
+
+
+    border-radius:10px;
+
+
+    background:#8F00FF;
+
+
+    color:white;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    font-size:18px;
+
+
+}
+
+
+
+
+.paymentTextTaxi h4{
+
+    margin:0;
+
+    font-size:14px;
+
+    font-weight:600;
+
+
+}
+
+
+
+.paymentTextTaxi p{
+
+
+    margin:3px 0;
+
+
+    font-size:12px;
+
+
+    color:#656565;
+
+
+}
+
+
+
+
+.radioTaxi{
+
+
+    margin-left:auto;
+
+
+    width:22px;
+
+
+    height:22px;
+
+
+    border-radius:50%;
+
+
+    border:3px solid #CACACA;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    color:#8F00FF;
+
+
+    font-size:12px;
+
+
+}
+
+
+
+
+.activePaymentTaxi .radioTaxi{
+
+    border-color:#8F00FF;
+
+}
+
+
+
+
+.addPaymentTaxi{
+
+
+    position:absolute;
+
+
+    bottom:24px;
+
+
+    left:36px;
+
+
+    width:303px;
+
+
+    height:55px;
+
+
+    border:none;
+
+
+    border-radius:30px;
+
+
+    background:#000;
+
+
+    color:white;
+
+
+    font-size:16px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    gap:55px;
+
+
+}
+
+
+
+.plusTaxi{
+
+
+    width:45px;
+
+
+    height:45px;
+
+
+    border-radius:50%;
+
+
+    background:white;
+
+
+    color:black;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    font-size:28px;
+
+
+}
+
+
+
+
+.bookingTaxi{
+   width: 100%;
+    min-height: 100vh;
+    background:white;
+    overflow:hidden;
+    position:relative;
+    font-family:Poppins, sans-serif;
+}
+
+
+/* MAP */
+
+.bookingMapTaxi{
+
+    height:430px;
+    width:100%;
+    background:
+    linear-gradient(
+    180deg,
+    rgba(255,255,255,.8),
+    transparent
+    ),
+    url("https://img.magnific.com/premium-vector/russia-background-with-color-gradient_687236-171.jpg");
+
+    background-size:cover;
+    position:relative;
+
+}
+
+
+
+.bookingHeaderTaxi{
+
+    position:absolute;
+    top:25px;
+    left:36px;
+    right:36px;
+
+    display:flex;
+    justify-content:space-between;
+}
+
+
+
+.bookingMenuTaxi{
+
+    width:42px;
+    height:42px;
+    background:#8F00FF;
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:22px;
+
+}
+
+
+
+.bookingAvatarTaxi{
+
+    width:42px;
+    height:42px;
+    border-radius:50%;
+
+}
+
+
+
+
+
+.bookingBackTaxi{
+
+    position:absolute;
+
+    left:36px;
+    bottom:20px;
+
+    width:45px;
+    height:45px;
+
+    border:0;
+    background:white;
+
+    border-radius:50%;
+
+    font-size:25px;
+
+    box-shadow:0 5px 15px #0002;
+
+}
+
+
+
+
+
+.pinStartTaxi{
+
+    position:absolute;
+
+    top:250px;
+    left:90px;
+
+    width:25px;
+    height:25px;
+
+}
+
+
+
+.pinEndTaxi{
+
+    position:absolute;
+
+    top:130px;
+    right:60px;
+
+}
+
+
+
+
+.routeLineMapTaxi{
+
+    position:absolute;
+
+    width:170px;
+    height:90px;
+
+    border-top:4px solid #F52D56;
+
+    border-radius:50%;
+
+    top:180px;
+    left:110px;
+
+}
+
+
+
+
+
+/* BOTTOM */
+
+
+.bookingBottomTaxi{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+    height:390px;
+
+    background:white;
+
+    border-radius:30px 30px 0 0;
+
+    box-shadow:0 -5px 20px #0002;
+
+    padding:20px;
+
+    box-sizing:border-box;
+
+}
+
+
+
+
+/* DRIVER */
+
+
+.driverTaxi{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+
+.driverImgTaxi{
+
+    width:55px;
+    height:55px;
+
+    border-radius:15px;
+
+}
+
+
+.driverTaxi h3{
+
+    margin:0;
+
+    font-size:16px;
+
+}
+
+
+
+.driverTaxi p{
+
+    margin:5px 0;
+
+    color:#aaa;
+
+}
+
+
+
+.callTaxi{
+
+    margin-left:auto;
+
+    width:45px;
+    height:45px;
+
+    border:0;
+
+    background:#8F00FF;
+
+    color:white;
+
+    border-radius:50%;
+
+}
+
+
+
+
+/* LOCATION */
+
+
+.placeTaxi{
+
+    margin-top:25px;
+
+}
+
+
+
+.placeItemTaxi{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+.placeItemTaxi p{
+
+    margin:0;
+
+    color:#777;
+
+    font-size:12px;
+
+}
+
+
+
+.placeItemTaxi h4{
+
+    margin:3px 0;
+
+}
+
+
+
+
+.circlePurpleTaxi,
+.circleRedTaxi{
+
+    width:18px;
+    height:18px;
+
+    border-radius:50%;
+
+}
+
+
+
+.circlePurpleTaxi{
+
+    border:5px solid #8F00FF;
+
+}
+
+
+
+.circleRedTaxi{
+
+    background:#F52D56;
+
+}
+
+
+
+.dashTaxi{
+
+    height:35px;
+
+    border-left:2px dashed #ccc;
+
+    margin-left:9px;
+
+}
+
+
+
+
+
+/* TRIP */
+
+
+.tripTaxi{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-top:25px;
+
+}
+
+
+.tripTaxi p{
+
+    color:#aaa;
+
+    font-size:12px;
+
+    margin:0;
+
+}
+
+
+
+.tripTaxi h4{
+
+    margin:5px 0;
+
+}
+
+
+
+
+
+/* BUTTON */
+
+
+.cancelTaxi{
+
+    position:absolute;
+
+    bottom:25px;
+
+    left:36px;
+
+    width:300px;
+
+    height:55px;
+
+    background:black;
+
+    color:white;
+
+    border:none;
+
+    border-radius:15px;
+
+    font-size:16px;
+
+}
+
+
+
+.plusCancelTaxi{
+
+    position:absolute;
+
+    left:-18px;
+
+    top:10px;
+
+
+    width:45px;
+    height:45px;
+
+
+    background:white;
+
+    color:black;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    font-size:28px;
+
+    box-shadow:0 5px 15px #0003;
+
+}

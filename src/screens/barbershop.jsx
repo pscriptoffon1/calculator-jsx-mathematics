@@ -44,11 +44,19 @@ function Barbershop() {
     const [resultservice, setResultService] = useState('');
 
     const handleButtonClickSelect = () => {
+
+        if (selectedName === 'Не выбрано' || selectedTime === 'Не выбрано' || selectedDate === 'Не выбрано' || selectedService === 'Не выбрано') {
+            alert('Пожалуйста, заполните все поля!');
+            return;
+        }
+
+
+
         setResultNamee(selectedName);
         setResultTime(selectedTime);
         setResultDate(selectedDate);
         setResultService(selectedService);
-        setResultPrice(servicePrices[selectedService]);
+        setResultPrice(servicePrices[selectedService] || 0);
     };
     /*ИМЯ барбера + селект*/
 

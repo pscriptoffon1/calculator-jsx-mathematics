@@ -25,6 +25,7 @@ import Onlineshop from './screens/onlineshop'
 import Drugstore from './screens/drugstore'
 import Menu from './screens/menu'
 import Barbershop from './screens/barbershop'
+import Taxi from './screens/taxi'
 
 
 
@@ -63,6 +64,7 @@ function App() {
           <Route path="/drugstore" element={<Drugstore />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/barbershop" element={<Barbershop />} />
+          <Route path="/taxi" element={<Taxi />} />
 
 
 
